@@ -1,0 +1,238 @@
+
+
+
+/* Start:/bitrix/components/my/monitoring/templates/guest/style.css*/
+/* Стили сдублированные с основного сайта*/
+body {
+    margin: 0;
+    padding: 0;
+    font: 15px/1.5 Arial, Tahoma, Verdana, sans-serif;
+    color: #4d4d4d;
+    background: #fff;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+.btn.btn-lg {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -moz-user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.btn-success,
+.btn-success:visited {
+    color: #fff;
+    background-color: #7ac143;
+    border-color: #4cae4c;
+}
+
+a {
+    color: #487dba;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* Новые стили */
+section {
+    padding: 50px 0;
+}
+
+section:nth-child(odd) {
+    background: #f5f6f7;
+}
+
+section h3 {
+    margin: 0 0 30px;
+    font-size: 44px;
+    font-weight: normal;
+    line-height: 1.25em;
+    color: #7bc143;
+    text-align: center;
+}
+
+section h4,
+section h5 {
+    margin: 0 0 40px;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.25em;
+    color: #666;
+    text-align: center;
+}
+
+section h4 {
+    text-transform: uppercase;
+}
+
+.container {
+    margin: 0 auto;
+    width: 990px;
+}
+
+.row {
+    margin: 0 -10px;
+}
+
+.row:before,
+.row:after {
+    content: " ";
+    display: table;
+}
+
+.row:after {
+    clear: both;
+}
+
+.row-m0 {
+    margin: 0;
+}
+
+[class^="col-"] {
+    float: left;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.row-m0 [class^="col-"] {
+    padding: 0;
+}
+
+.col-20 {
+    width: 20%;
+}
+
+.col-25 {
+    width: 25%;
+}
+
+.col-33 {
+    width: 33.33333333%;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.col-67 {
+    width: 66.66666667%;
+}
+
+.col-100 {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.img-wrapper img {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn.btn-lg {
+    padding: 12px 50px;
+    font-size: 24px;
+}
+
+.work {
+    margin-bottom: 30px;
+}
+
+.work h4,
+.work h5 {
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+.work h4 {
+    height: 70px;
+}
+
+.work p {
+    padding: 0 15px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.work__icon {
+    position: relative;
+    margin-bottom: 15px;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.work_action .work__icon:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 0;
+    border-top: 2px dashed #7bc143;
+}
+
+[class^="col-"]:last-child .work_action .work__icon:after {
+    content: none;
+}
+
+.work__icon span {
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    width: 80px;
+    height: 80px;
+    font-size: 36px;
+    line-height: 80px;
+    text-align: center;
+    border: 2px solid #666;
+    border-radius: 50%;
+    box-shadow: 0 0 0 15px #fff;
+    background: #fff;
+}
+
+.work__more {
+    text-align: center;
+}
+
+.login .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+/* End */
+/* /bitrix/components/my/monitoring/templates/guest/style.css */

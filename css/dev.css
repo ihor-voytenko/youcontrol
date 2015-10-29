@@ -1,0 +1,16 @@
+.dev-container {
+    width: 1024px;
+    margin: 50px auto;
+    /*background: #cfcfcf;*/
+    padding: 20px;
+}
+.dev-separator {
+    margin: 100px 0;
+}
+
+.dev-left {
+    float: left;
+}
+.dev-right {
+    float: right;
+}

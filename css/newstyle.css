@@ -193,8 +193,6 @@
 /* END BLOCK: bigshadowblock */
 
 /* BLOCK: conclusionsblock */
-/* END BLOCK: bigshadowblock */
-
 .conclusionsblock-title {
     font-weight: bold;
     margin: 0px 0px 10px 0px;
@@ -213,6 +211,8 @@
 }
 
 /* END BLOCK: conclusionsblock */
+
+
 
 /**
  * For modern browsers

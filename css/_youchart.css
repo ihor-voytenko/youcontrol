@@ -1,82 +1,293 @@
 .youchart {
+    width: 485px;
 
 }
 
 .youchart-title {
     color: white;
-    height: 120px;
-    line-height: 120px;
+    height: 126px;
+    line-height: 115px;
     padding: 0 30px;
+    margin-bottom: 6px;
+    position: relative;
+    overflow: hidden;
+    background-image: url(../images/downarrow.png);
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
+/*.youchart-title:after {*/
+/*content: '';*/
+/*position: absolute;*/
+/*bottom: 0;*/
+/*left: 0;*/
+/*height: 8px;*/
+/*width: 1996px;*/
+/*}*/
+
 /* for 11 */
-.youchart-title-lvl_0 { background-color: #7bc043; }
-.youchart-title-lvl_1 { background-color: #92cb37; }
-.youchart-title-lvl_2 { background: #afdb27; }
-.youchart-title-lvl_3 { background-color: #d5ec13; }
-.youchart-title-lvl_4 { background-color: #edf108; }
+.youchart-title-lvl_0 {
+    background-color: #7bc043;
+    background-position: -976px bottom;
+    /*-975px*/
+}
+
+.youchart-title-lvl_1 {
+    background-color: #92cb37;
+    background-position: -932px bottom;
+}
+
+.youchart-title-lvl_2 {
+    background-color: #afdb27;
+    background-position: -888px bottom;
+}
+
+/*.youchart-title-lvl_2:after {*/
+/*left: */
+/*}*/
+.youchart-title-lvl_3 {
+    background-color: #d5ec13;
+    background-position: -844px bottom;
+}
+
+/*-839px*/
+
+.youchart-title-lvl_4 {
+    background-color: #edf108;
+    background-position: -800px bottom;
+}
+
+/* -794px */
 
 .youchart-title-lvl_5 {
+    /*-747px*/
     background-color: #fff100;
-    color: #656349;
+    background-position: -756px bottom;
 }
-.youchart-title-lvl_6 { background-color: #ffdd01; }
-.youchart-title-lvl_7 { background-color: #ffbd09; }
-.youchart-title-lvl_8 { background-color: #fc9813; }
-.youchart-title-lvl_9 { background-color: #f16422; }
-.youchart-title-lvl_10 { background-color: #e24d07; }
+
+.youchart-title-lvl_6 {
+    background-color: #ffdd01;
+    background-position: -712px bottom;
+}
+
+/*-702px*/
+.youchart-title-lvl_7 {
+    background-color: #ffbd09;
+    background-position: -668px bottom;
+}
+
+/*-656px*/
+.youchart-title-lvl_8 {
+    background-color: #fc9813;
+    background-position: -624px bottom;
+}
+
+/*-612px*/
+.youchart-title-lvl_9 {
+    background-color: #f16422;
+    background-position: -580px bottom;
+}
+
+/* -565px*/
+.youchart-title-lvl_10 {
+    background-color: #e24d07;
+    background-position: -536px bottom;
+}
+
+/* -519px*/
 
 /* for 11 */
+
+/* for 11  gradient*/
+.youchart-title-lvl_0 {
+    background-color: #7bc043;
+    background-position: -991px bottom;
+    /*-975px*/
+}
+
+.youchart-title-lvl_10 {
+    background-color: #92cb37;
+    background-position: -946px bottom;
+}
+
+.youchart-title-lvl_20 {
+    background-color: #afdb27;
+    background-position: -900px bottom;
+}
+
+/*.youchart-title-lvl_2:after {*/
+/*left: */
+/*}*/
+.youchart-title-lvl_30 {
+    background-color: #d5ec13;
+    background-position: -853px bottom;
+}
+
+/*-839px*/
+
+.youchart-title-lvl_40 {
+    background-color: #edf108;
+    background-position: -805px bottom;
+}
+
+/* -794px */
+
+.youchart-title-lvl_50 {
+    /*-747px*/
+    background-color: #fff100;
+    background-position: -759px bottom;
+}
+
+.youchart-title-lvl_60 {
+    background-color: #ffdd01;
+    background-position: -711px bottom;
+}
+
+/*-702px*/
+.youchart-title-lvl_70 {
+    background-color: #ffbd09;
+    background-position: -665px bottom;
+}
+
+/*-656px*/
+.youchart-title-lvl_80 {
+    background-color: #fc9813;
+    background-position: -618px bottom;
+}
+
+/*-612px*/
+.youchart-title-lvl_90 {
+    background-color: #f16422;
+    background-position: -571px bottom;
+}
+
+/* -565px*/
+.youchart-title-lvl_100 {
+    background-color: #e24d07;
+    background-position: -521px bottom;
+}
+
+/* -519px*/
+
+/* for 11 gradient */
 
 .youchart-name {
     font-size: 19px;
     font-weight: bold;
     text-transform: uppercase;
     display: inline-block;
-    line-height: 1.1;
+    line-height: 120px;
 }
 
 .youchart-count {
     font-family: Impact;
-    font-size: 81px;
+    font-size: 72px;
     font-weight: bold;
     text-transform: uppercase;
     float: right;
+    line-height: 116px;
 }
 
 .youchart-line {
+    background-image: url(../images/gradient_line.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: auto;
+    height: 10px;
+
 }
+
+/*.youchart-lines {*/
+/*background-image: url(../images/gradient_line.png);*/
+/*background-repeat: no-repeat;*/
+/*background-position: center center;*/
+/**/
+
+/*}*/
 
 .youchart-line-step {
-}
-
-.youchart-line-lvl_2 {
+    float: left;
+    color: #989898;
+    width: 47px;
+    height: 20px;
+    box-sizing: border-box;
+    /*padding-top: 2px;*/
+    font-size: 11px;
+    line-height: 56px;
+    transition: opacity .1s ease;
+    text-align: center;
 }
 
 .youchart-steps {
     overflow: hidden;
     /*word-spacing: -4px;*/
     /*letter-spacing: -4px;*/
-    background: #e24d07;
+    /*background: #e24d07;*/
 }
 
 .youchart-step {
     /*word-spacing: 0;*/
     /*letter-spacing: 0;*/
     float: left;
-    width: 9.08%;
+    text-align: center;
+    width: 44px;
+    height: 20px;
+    box-sizing: border-box;
+    color: white;
+    /*padding-top: 2px;*/
+    font-size: 11px;
+    line-height: 20px;
+    transition: opacity .1s ease;
+}
+
+.youchart-step:hover {
+    opacity: .8;
+    cursor: pointer;
 }
 
 /* for 11 */
-.youchart-step-lvl_0 { background-color: #7bc043; }
-.youchart-step-lvl_1 { background-color: #92cb37; }
-.youchart-step-lvl_2 { background: #afdb27; }
-.youchart-step-lvl_3 { background-color: #d5ec13; }
-.youchart-step-lvl_4 { background-color: #edf108; }
-.youchart-step-lvl_5 { background-color: #fff100; }
-.youchart-step-lvl_6 { background-color: #ffdd01; }
-.youchart-step-lvl_7 { background-color: #ffbd09; }
-.youchart-step-lvl_8 { background-color: #fc9813; }
-.youchart-step-lvl_9 { background-color: #f16422; }
-.youchart-step-lvl_10 { background-color: #e24d07; }
+.youchart-step-lvl_0 {
+    background-color: #7bc043;
+}
+
+.youchart-step-lvl_1 {
+    background-color: #92cb37;
+}
+
+.youchart-step-lvl_2 {
+    background-color: #afdb27;
+}
+
+.youchart-step-lvl_3 {
+    background-color: #d5ec13;
+}
+
+.youchart-step-lvl_4 {
+    background-color: #edf108;
+}
+
+.youchart-step-lvl_5 {
+    background-color: #fff100;
+}
+
+.youchart-step-lvl_6 {
+    background-color: #ffdd01;
+}
+
+.youchart-step-lvl_7 {
+    background-color: #ffbd09;
+}
+
+.youchart-step-lvl_8 {
+    background-color: #fc9813;
+}
+
+.youchart-step-lvl_9 {
+    background-color: #f16422;
+}
+
+.youchart-step-lvl_10 {
+    background-color: #e24d07;
+}
+
 /* for */

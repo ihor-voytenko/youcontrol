@@ -1,0 +1,82 @@
+.youchart {
+
+}
+
+.youchart-title {
+    color: white;
+    height: 120px;
+    line-height: 120px;
+    padding: 0 30px;
+}
+
+/* for 11 */
+.youchart-title-lvl_0 { background-color: #7bc043; }
+.youchart-title-lvl_1 { background-color: #92cb37; }
+.youchart-title-lvl_2 { background: #afdb27; }
+.youchart-title-lvl_3 { background-color: #d5ec13; }
+.youchart-title-lvl_4 { background-color: #edf108; }
+
+.youchart-title-lvl_5 {
+    background-color: #fff100;
+    color: #656349;
+}
+.youchart-title-lvl_6 { background-color: #ffdd01; }
+.youchart-title-lvl_7 { background-color: #ffbd09; }
+.youchart-title-lvl_8 { background-color: #fc9813; }
+.youchart-title-lvl_9 { background-color: #f16422; }
+.youchart-title-lvl_10 { background-color: #e24d07; }
+
+/* for 11 */
+
+.youchart-name {
+    font-size: 19px;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 1.1;
+}
+
+.youchart-count {
+    font-family: Impact;
+    font-size: 81px;
+    font-weight: bold;
+    text-transform: uppercase;
+    float: right;
+}
+
+.youchart-line {
+}
+
+.youchart-line-step {
+}
+
+.youchart-line-lvl_2 {
+}
+
+.youchart-steps {
+    overflow: hidden;
+    /*word-spacing: -4px;*/
+    /*letter-spacing: -4px;*/
+    background: #e24d07;
+}
+
+.youchart-step {
+    /*word-spacing: 0;*/
+    /*letter-spacing: 0;*/
+    float: left;
+    width: 9.08%;
+}
+
+/* for 11 */
+.youchart-step-lvl_0 { background-color: #7bc043; }
+.youchart-step-lvl_1 { background-color: #92cb37; }
+.youchart-step-lvl_2 { background: #afdb27; }
+.youchart-step-lvl_3 { background-color: #d5ec13; }
+.youchart-step-lvl_4 { background-color: #edf108; }
+.youchart-step-lvl_5 { background-color: #fff100; }
+.youchart-step-lvl_6 { background-color: #ffdd01; }
+.youchart-step-lvl_7 { background-color: #ffbd09; }
+.youchart-step-lvl_8 { background-color: #fc9813; }
+.youchart-step-lvl_9 { background-color: #f16422; }
+.youchart-step-lvl_10 { background-color: #e24d07; }
+/* for */

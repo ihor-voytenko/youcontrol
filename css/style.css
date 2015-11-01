@@ -404,7 +404,7 @@ img {
     padding: 0 0 0 43px;
     color: #7bc143;
     position: absolute;
-    top: 46 p;
+    top: 46px;
     left: 570px;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAKCAYAAACngj4SAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpBRUI5OTg0M0RERDgxMUUzOUE5NTk4QUFDNUNFRjQ2NiIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpBRUI5OTg0NERERDgxMUUzOUE5NTk4QUFDNUNFRjQ2NiI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkFFQjk5ODQxREREODExRTM5QTk1OThBQUM1Q0VGNDY2IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkFFQjk5ODQyREREODExRTM5QTk1OThBQUM1Q0VGNDY2Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+pdNqAQAAAONJREFUeNpi/P//PwMMnD17lhVIhQCxNxBLM1AGPgLxASBeYGxs/AEmyAizEGiZMpBaD8S6DNQFb4E4FmjpdriFQMtEQXYCsSwDbcAvIHYGWnqECSrQSEPLQIANiGcAPcbIeObMGRYg5x0Q8zLQHpiDLFMmwrIv0ATwB48aUyISmj7IQlYCil4AsS0w/O/gUwQMLm4gtQ2I7fAoY2WCpiJ8IIeQZSAAVPMVSEUD8Xc8yt6BLHyJR9ElIF5HbAQBLX0CpObgUfIAli00gRx2LApeAQ15RkqqAJrFB6SUcEhfBQgwANyeRRChNEqvAAAAAElFTkSuQmCC) no-repeat left 12px;
     display: none;
@@ -4849,27 +4849,27 @@ div.transbox {
     text-align: center;
 }
 
-.procent .p1.p1-20{
+.procent .p1.p1-20 {
     margin-left: 66px;
 }
 
-.procent .p1.p1-40{
+.procent .p1.p1-40 {
     margin-left: 55px;
 }
 
-.procent .p1.p1-60{
+.procent .p1.p1-60 {
     margin-left: 49px;
 }
 
-.procent .p1.p1-80{
+.procent .p1.p1-80 {
     margin-left: 51px;
 }
 
-.procent .p1.p1-100{
+.procent .p1.p1-100 {
     margin-left: 26px;
 }
 
-.circle-wrapper{
+.circle-wrapper {
     margin-left: 45px;
 }
 

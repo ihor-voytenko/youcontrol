@@ -45,6 +45,10 @@
     margin-bottom: 20px;
 }
 
+.btn {
+    border-radius: 0px;
+}
+
 .bigshadowblock-btn {
 }
 
@@ -55,9 +59,11 @@
 .risklevel-param-low {
     color: #81C55C;
 }
+
 .risklevel-param-high {
     color: #F31C24;
 }
+
 .risklevel-param-middle {
     color: #FF8F1F;
 }
@@ -93,11 +99,120 @@
 .risklevel-img-low {
     background-image: url(../images/low_new.png);
 }
+
 /* .risklevel-img */
 
+/*Btn Style*/
+.btnswitch-list {
+    display: -webkit-inline-box;
+}
 
+.contentnav-list {
+    display: -webkit-inline-box;
+
+}
+
+.contentnav-text {
+    color: #989898;
+}
+
+.btnswitch-icon {
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin-right: 8px;
+    width: 16px;
+    height: 12px;
+}
+
+.btnswitch-icon-horizontal {
+    background-image: url(../images/sp_green.png);
+}
+
+.btnswitch-btn-current .btnswitch-icon-horizontal {
+    background-image: url(../images/sp.png);
+}
+
+.btnswitch-icon-vertical {
+    background-image: url(../images/sp2.png);
+}
+
+.btnswitch-btn-current .btnswitch-icon-vertical {
+    background-image: url(../images/sp2_white.png);
+}
+
+.btnswitch-btn {
+    background: white;
+    border: solid #D7D7D7 1px;
+    color: #989898;
+}
+
+.btnswitch-btn:hover {
+    background: #dfdfdf;
+
+}
+
+.btnswitch-btn-current {
+    background: #7CBE4B;
+    border: solid #5BB24F 1px;
+    color: white;
+}
+
+.btnswitch-btn-current:hover {
+    background: #7CBE4B;
+
+}
+
+.contentnav-btn {
+    background: white;
+    transition: background-color .2s ease;
+    border: solid #D7D7D7 1px;
+}
+
+.contentnav-btn:hover {
+    background: #dfdfdf;
+}
+
+/*Btn Style*/
+
+.icon {
+    margin-left: 0px;
+    margin-right: 0px;
+    color: #9FD27C;
+}
+
+.contentnav-item {
+    padding: 5px;
+    border-radius: 0px;
+}
+
+.icon-arrow-left {
+    margin-right: 8px;
+}
 
 /* END BLOCK: bigshadowblock */
+
+/* BLOCK: conclusionsblock */
+/* END BLOCK: bigshadowblock */
+
+.conclusionsblock-title {
+    font-weight: bold;
+    margin: 0px 0px 10px 0px;
+}
+
+.conclusionsblock {
+    box-sizing: border-box;
+    background-color: #F2F2F2;
+    padding: 25px;
+}
+
+.conclusionsblock-text {
+    color: #A1A1A1;
+    padding-right: 95px;
+    font-size: 14px;
+}
+
+/* END BLOCK: conclusionsblock */
 
 /**
  * For modern browsers

@@ -14,3 +14,7 @@
 .dev-right {
     float: right;
 }
+
+.dev-half {
+    width: 49%;
+}

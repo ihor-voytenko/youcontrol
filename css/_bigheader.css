@@ -1,0 +1,30 @@
+.bigheader, .bigheader * {
+    box-sizing: border-box;
+}
+.bigheader {
+    border: 6px solid #eaeaea;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bigheader-content {
+    margin: 29px;
+}
+.bigheader-title {
+    color: #4d4d4f;
+    font-weight: bold;
+    font-size: 19px;
+    text-transform: uppercase;
+}
+.bigheader-gray {
+    text-transform: none;
+    color: #747776;
+}
+.bigheader-label {
+    color: #959595;
+    font-size: 15px;
+}
+.bigheader-companyname {
+    font-size: 15px;
+    color: #4d4d4f;
+    text-transform: uppercase;
+    font-weight: bold;
+}

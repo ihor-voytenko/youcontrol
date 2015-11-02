@@ -192,6 +192,12 @@
 
 /* END BLOCK: bigshadowblock */
 
+
+
+
+
+
+
 /* BLOCK: conclusionsblock */
 .conclusionsblock-title {
     font-weight: bold;
@@ -209,8 +215,65 @@
     padding-right: 95px;
     font-size: 14px;
 }
-
 /* END BLOCK: conclusionsblock */
+
+
+
+
+/*  BLOCK: optionsanalysis-block */
+.optionsanalysis-block{
+    box-sizing: border-box;
+    height: 500px;
+}
+.optionsanalysis-left{
+    float: left;
+    width: 30%;
+}
+.optionsanalysis-right{
+    float: right;
+    width: 70%;
+}
+.optionsanalysis-title{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.optionsanalysis-icon {
+    background-image: url(../images/galo4ka.png);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+}
+.ticklist-item{
+    padding: 2px 0px 0px 25px;
+    width: auto;
+    margin-top: 12px;
+    color: #989898;
+    background-image: url(../images/galo4ka.png);
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+}
+.optionsanalysis-text{
+    color: #989898;
+    padding: 0px 0px 18px 0px;
+}
+
+
+
+
+
+/*  END BLOCK: optionsanalysis-block */
+
+
+
+
+
+
+
+
+
+
 
 
 

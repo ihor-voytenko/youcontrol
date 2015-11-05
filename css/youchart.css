@@ -107,12 +107,12 @@
 /* for 11 */
 
 /* for 11  gradient*/
-.youchart-line-step_lvl_0{
-    margin-left: -19px;
-}
-.youchart-line-step_lvl_100{
-    margin-right: -22px;
-}
+/*.youchart-line-step_lvl_0{*/
+    /*margin-left: -19px;*/
+/*}*/
+/*.youchart-line-step_lvl_100{*/
+    /*margin-right: -22px;*/
+/*}*/
 .youchart-title-lvl_0 {
     background-color: #7bc043;
     background-position: -991px bottom;
@@ -213,10 +213,9 @@
     background-repeat: no-repeat;
     background-position: top center;
     width: auto;
-    /*height: 10px;*/
+    min-height: 10px;
 
     /*float: left;*/
-    /*color: #989898;*/
     /*width: 47px;*/
     /*height: 20px;*/
     /*box-sizing: border-box;*/
@@ -230,11 +229,15 @@
 
 
 .youchart-steps {
-    /*overflow: hidden;*/
+    overflow: hidden;
     /*word-spacing: -4px;*/
     /*letter-spacing: -4px;*/
     /*background: #e24d07;*/
 }
+.youchart-steps-grad {
+    padding-top: 14px;
+}
+
 
 .youchart-step {
     float: left;
@@ -248,14 +251,25 @@
     line-height: 20px;
     transition: opacity .1s ease;
 }
+.youchart-step-grad {
+    color: #7f7f7f;
+    font-size: 11px;
+    width: 47px;
+    background-color: transparent !important;
+}
+.youchart-step-percent_0 {
+    margin-left: -18px;
+}
+.youchart-step-percent_100 {
+    margin-right: -20px;
+}
+
 /*.youchart-step-grad {*/
     /*float: left;*/
     /*color: #989898;*/
     /*width: 47px;*/
     /*height: 20px;*/
     /*box-sizing: border-box;*/
-    /*padding-top: 2px;*/
-    /*font-size: 11px;*/
     /*line-height: 56px;*/
     /*transition: opacity .1s ease;*/
     /*text-align: center;*/
@@ -263,8 +277,10 @@
 
 .youchart-step:hover {
     opacity: .8;
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
+
+
 
 /* for 11 */
 .youchart-step-lvl_0 {

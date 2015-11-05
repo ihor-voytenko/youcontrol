@@ -20,6 +20,8 @@
   "homepage": "https://github.com/ihor-voytenko/youcontrol#readme",
   "description": "",
   "dependencies": {
+    "classnames": "^2.2.0",
+    "lodash": "^3.10.1",
     "react": "",
     "react-dom": "^0.14.2"
   },

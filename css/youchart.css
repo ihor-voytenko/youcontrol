@@ -38,18 +38,18 @@
 /* for 11 */
 .youchart-title-lvl_0 {
     background-color: #7bc043;
-    background-position: -976px bottom;
+    background-position: -1027px bottom;
     /*-975px*/
 }
 
 .youchart-title-lvl_1 {
     background-color: #92cb37;
-    background-position: -932px bottom;
+    background-position: -983px bottom;
 }
 
 .youchart-title-lvl_2 {
     background-color: #afdb27;
-    background-position: -888px bottom;
+    background-position: -940px bottom;
 }
 
 /*.youchart-title-lvl_2:after {*/
@@ -57,14 +57,14 @@
 /*}*/
 .youchart-title-lvl_3 {
     background-color: #d5ec13;
-    background-position: -844px bottom;
+    background-position: -896px bottom;
 }
 
 /*-839px*/
 
 .youchart-title-lvl_4 {
     background-color: #edf108;
-    background-position: -800px bottom;
+    background-position: -851px bottom;
 }
 
 /* -794px */
@@ -72,49 +72,48 @@
 .youchart-title-lvl_5 {
     /*-747px*/
     background-color: #fff100;
-    background-position: -756px bottom;
+    background-position: -808px bottom;
 }
 
 .youchart-title-lvl_6 {
     background-color: #ffdd01;
-    background-position: -712px bottom;
+    background-position: -763px bottom;
 }
 
 /*-702px*/
 .youchart-title-lvl_7 {
     background-color: #ffbd09;
-    background-position: -668px bottom;
+    background-position: -720px bottom;
 }
 
 /*-656px*/
 .youchart-title-lvl_8 {
     background-color: #fc9813;
-    background-position: -624px bottom;
+    background-position: -676px bottom;
 }
 
 /*-612px*/
 .youchart-title-lvl_9 {
     background-color: #f16422;
-    background-position: -580px bottom;
+    background-position: -631px bottom;
 }
 
 /* -565px*/
 .youchart-title-lvl_10 {
     background-color: #e24d07;
-    background-position: -536px bottom;
+    background-position: -588px bottom;
 }
-
 /* -519px*/
 
 /* for 11 */
 
 /* for 11  gradient*/
-.youchart-line-step_lvl_0{
-    margin-left: -19px;
-}
-.youchart-line-step_lvl_100{
-    margin-right: -22px;
-}
+/*.youchart-line-step_lvl_0{*/
+    /*margin-left: -19px;*/
+/*}*/
+/*.youchart-line-step_lvl_100{*/
+    /*margin-right: -22px;*/
+/*}*/
 .youchart-title-lvl_0 {
     background-color: #7bc043;
     background-position: -991px bottom;
@@ -196,7 +195,7 @@
 }
 
 .youchart-count {
-    font-family: Impact;
+    font-family: bebas_neuebold, Impact, Arial, sans-serif;
     font-size: 72px;
     font-weight: bold;
     text-transform: uppercase;
@@ -204,42 +203,42 @@
     line-height: 116px;
 }
 
+
+
+
 .youchart-line {
+
+}
+.youchart-line-grad {
     background-image: url(../images/gradient_line.png);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: top center;
     width: auto;
-    height: 10px;
+    min-height: 10px;
 
-}
-
-/*.youchart-lines {*/
-/*background-image: url(../images/gradient_line.png);*/
-/*background-repeat: no-repeat;*/
-/*background-position: center center;*/
-/**/
-
-/*}*/
-
-.youchart-line-step {
-    float: left;
-    color: #989898;
-    width: 47px;
-    height: 20px;
-    box-sizing: border-box;
+    /*float: left;*/
+    /*width: 47px;*/
+    /*height: 20px;*/
+    /*box-sizing: border-box;*/
     /*padding-top: 2px;*/
-    font-size: 11px;
-    line-height: 56px;
-    transition: opacity .1s ease;
-    text-align: center;
+    /*font-size: 11px;*/
+    /*line-height: 56px;*/
+    /*transition: opacity .1s ease;*/
+    /*text-align: center;*/
 }
+
+
 
 .youchart-steps {
-    /*overflow: hidden;*/
+    overflow: hidden;
     /*word-spacing: -4px;*/
     /*letter-spacing: -4px;*/
     /*background: #e24d07;*/
 }
+.youchart-steps-grad {
+    padding-top: 14px;
+}
+
 
 .youchart-step {
     float: left;
@@ -253,11 +252,36 @@
     line-height: 20px;
     transition: opacity .1s ease;
 }
+.youchart-step-grad {
+    color: #7f7f7f;
+    font-size: 11px;
+    width: 47px;
+    background-color: transparent !important;
+}
+.youchart-step-percent_0 {
+    margin-left: -18px;
+}
+.youchart-step-percent_100 {
+    margin-right: -20px;
+}
+
+/*.youchart-step-grad {*/
+    /*float: left;*/
+    /*color: #989898;*/
+    /*width: 47px;*/
+    /*height: 20px;*/
+    /*box-sizing: border-box;*/
+    /*line-height: 56px;*/
+    /*transition: opacity .1s ease;*/
+    /*text-align: center;*/
+/*}*/
 
 .youchart-step:hover {
     opacity: .8;
-    cursor: pointer;
+    /*cursor: pointer;*/
 }
+
+
 
 /* for 11 */
 .youchart-step-lvl_0 {

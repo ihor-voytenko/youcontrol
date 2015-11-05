@@ -1,9 +1,12 @@
 .youchart {
     width: 485px;
-
+}
+.youchart-big {
+    width: 100%;
 }
 
 .youchart-title {
+    background-color: #cfcfcf;
     color: white;
     height: 126px;
     line-height: 115px;
@@ -13,7 +16,10 @@
     overflow: hidden;
     background-image: url(../images/downarrow.png);
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center bottom;
+}
+.youchart-title-noarrow {
+    background-image: none;
 }
 
 /*.youchart-title:after {*/
@@ -291,3 +297,14 @@
 }
 
 /* for */
+
+
+.youchart-bigline {
+    display: block;
+    width: 100%;
+    height: 58px;
+    background-repeat: repeat-x;
+    background-image: url(../images/horizontal-counted-big.png);
+    background-size: contain;
+    /*background-color: #ff0000;*/
+}

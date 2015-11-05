@@ -1,0 +1,32 @@
+{
+  "name": "youcontrol",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run serve | npm run dev",
+    "serve": "./node_modules/.bin/http-server -p 8080",
+    "dev": "webpack-dev-server --progress --colors --port 8090",
+    "deploy": "NODE_ENV=production webpack -p --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ihor-voytenko/youcontrol.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ihor-voytenko/youcontrol/issues"
+  },
+  "homepage": "https://github.com/ihor-voytenko/youcontrol#readme",
+  "description": "",
+  "dependencies": {
+    "react": "",
+    "react-dom": "^0.14.2"
+  },
+  "devDependencies": {
+    "webpack": "",
+    "webpack-dev-server": "",
+    "jsx-loader": "",
+    "http-server": ""
+  }
+}

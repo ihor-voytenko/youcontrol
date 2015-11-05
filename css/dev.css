@@ -3,9 +3,14 @@
     margin: 50px auto;
     /*background: #cfcfcf;*/
     padding: 20px;
+
+}
+.dev-navigation{
+    width: 997px;
+    margin: 0 auto auto;
 }
 .dev-separator {
-   width: 100%;
+    margin: 50px 0;
 }
 
 .dev-left {
@@ -16,5 +21,5 @@
 }
 
 .dev-half {
-    width: 49%;
+    width: 50%;
 }

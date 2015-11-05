@@ -26,14 +26,7 @@
     background-position: center center;
 }
 
-/*.youchart-title:after {*/
-/*content: '';*/
-/*position: absolute;*/
-/*bottom: 0;*/
-/*left: 0;*/
-/*height: 8px;*/
-/*width: 1996px;*/
-/*}*/
+
 
 /* for 11 */
 .youchart-title-lvl_0 {
@@ -242,8 +235,6 @@
 }
 
 .youchart-step {
-    /*word-spacing: 0;*/
-    /*letter-spacing: 0;*/
     float: left;
     text-align: center;
     width: 44px;

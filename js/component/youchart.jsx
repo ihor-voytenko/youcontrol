@@ -1,6 +1,5 @@
 const React = require('react');
 
-
 class Youchart extends React.Component {
   render() {
     const {
@@ -28,15 +27,16 @@ class Youchart extends React.Component {
           <li className="youchart-step youchart-step-lvl_10">10</li>
         </ul>
       </div>
-
-    {this.props.children}
+      {this.props.children}
     </div>)
   }
 }
+
+
 Youchart.defaultProps = {
   count: 0,
   name: 'Noname',
   level: 1,
-}
+};
 
 module.exports = Youchart

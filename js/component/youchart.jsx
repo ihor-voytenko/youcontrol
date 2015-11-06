@@ -27,12 +27,12 @@ class Youchart extends React.Component {
     })
 
 
-    const items = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(function(c){
+    const items = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(function (c) {
       const num = (type === 'grad' && c !== 0)
           ? c + '0'
           : c;
 
-      const classPercent = 'youchart-step-percent_' + num // почему это валится с ошибкой компиляции ?
+      const classPercent = 'youchart-step-percent_' + num // почему при попытке включить его прямо в ключ, валится с ошибкой компиляции ?
 
       const itemClass = cx({
         "youchart-step": true,
@@ -58,7 +58,9 @@ class Youchart extends React.Component {
           {items}
         </ul>
       </div>
-      {this.props.children}
+      <div className='youchart-children'>
+        {this.props.children}
+      </div>
     </div>);
   }
 }
@@ -72,7 +74,7 @@ Youchart.defaultProps = {
 };
 
 Youchart.propTypes = {
-  level: function(props, propName, componentName) {
+  level: function (props, propName, componentName) {
     if (!(props[propName] >= 0 && props[propName] <= 10)) {
       return new Error('level ' + props[propName] + ' is not allowed');
     } else {

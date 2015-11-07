@@ -13,6 +13,7 @@ class Youchart extends React.Component {
     const titleClass = cx({
       'youchart-title': true,
       ['youchart-title-lvl_' + level]: true
+
     });
 
     const lineClass = cx({

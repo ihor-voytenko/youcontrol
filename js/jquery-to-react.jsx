@@ -63,7 +63,9 @@ const findAndRender = (function () {
       );
 
       // кешируем, отмечаем выполненными
-      jqEl.data('update', updateInDom).addClass(options.classNameActivated);
+      jqEl.data('update', function(newProps){
+        updateInDom(component, newProps, jqEl.children().get())
+      }).addClass(options.classNameActivated);
 
       jqEl.on('removed', function () {
         ReactDOM.unmountComponentAtNode(this);

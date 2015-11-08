@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>YouControls blocks</title>
+
+  <link rel="stylesheet" href="css/checkform.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/jquery-ui.css"/>
+  <link rel="stylesheet" href="css/keyboard.css"/>
+  <link rel="stylesheet" href="css/jquery.reject.css"/>
+  <link rel="stylesheet" href="css/kernel_main.css"/>
+  <link rel="stylesheet" href="css/page_28c0260ffe2f5351b76960a6102e1f15.css"/>
+  <link rel="stylesheet" href="css/popup.css"/>
+
+  <!--
+      - не меняем код который уже есть на проекте
+      - использовать код который уже есть
+      - если ты хочешь использовать код который уже есть, но надо что-то поменять
+        то используешь "модификатор" в виде класса, который
+  -->
+  <link rel="stylesheet" href="css/dev.css"/>
+  <link rel="stylesheet" href="css/newstyle.css"/>
+  <link rel="stylesheet" href="css/bigheader.css"/>
+  <link rel="stylesheet" href="css/youchart.css"/>
+
+
+  <script src="js/vendor/jquery-2.1.3.min.js"></script>
+  <script src="./node_modules/react/dist/react-with-addons.js"></script>
+</head>
+<body>
+<div class="dev-container">
+  <div class="cf">
+    <div class="dev-half dev-left">
+      <div class="jr"
+           data-component="youchart"
+           data-type="years"
+           data-name="Прибутковість"
+           data-level="2"
+           data-years='[
+             {"year":2001,"percent":48},
+             {"year":2002,"percent":62},
+             {"year":2003,"percent":36},
+             {"year":2004,"percent":26},
+             {"year":2005,"percent":63},
+             {"year":2006,"percent":76},
+             {"year":2007,"percent":43},
+             {"year":2008,"percent":64},
+             {"year":2009,"percent":18},
+             {"year":2010,"percent":24},
+             {"year":2011,"percent":47},
+             {"year":2012,"percent":53},
+             {"year":2013,"percent":36},
+             {"year":2014,"percent":30},
+             {"year":2015,"percent":10}
+           ]'
+          >
+        </div>
+    </div>
+    <div class="dev-half dev-right">
+      <div class="jr"
+           data-component="youchart"
+           data-type="years"
+           data-name="Прибутковість"
+           data-level="6"
+           data-years='[
+             {"year":2001,"percent":48},
+             {"year":2002,"percent":62},
+             {"year":2003,"percent":36},
+             {"year":2004,"percent":26},
+             {"year":2005,"percent":63},
+             {"year":2006,"percent":76},
+             {"year":2007,"percent":43},
+             {"year":2008,"percent":64},
+             {"year":2009,"percent":18},
+             {"year":2010,"percent":24},
+             {"year":2011,"percent":47},
+             {"year":2012,"percent":53},
+             {"year":2013,"percent":36},
+             {"year":2014,"percent":30},
+             {"year":2015,"percent":10}
+           ]'
+          >
+      </div>
+    </div>
+  </div>
+
+  <hr class="dev-separator"/>
+
+  <div class="cf">
+    <div class="dev-left dev-half">
+      <div class="jr"
+           data-component="youchart"
+           data-name="Capitalization"
+           data-count="123%"
+           data-level="2"
+          >
+        <div class="textblock">
+          <h4 class="textblock-title">Рентабельність активів -139.06%</h4>
+
+          <p class="textblock-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+            deserunt mollit anim id est laborum. <img src="images/downarrow.png" alt="emptyyy"/></p>
+        </div>
+      </div>
+    </div>
+    <div class="dev-right dev-half">
+      <div class="jr"
+           data-component="youchart"
+           data-type="grad"
+           data-name="Recrutization"
+           data-count="3493445.23 h"
+           data-level="8"
+          >
+        <h4 class="textblock-title">Рентабельність активів -139.06%</h4>
+
+        <p class="textblock-text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+          deserunt mollit anim id est laborum. <img src="images/downarrow.png" alt="emptyyy"/></p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- include the webpack-dev-server script so our scripts get reloaded when we make a change -->
+<!-- we'll run the webpack dev server on port 8090, so make sure it is correct -->
+<script src="http://localhost:8090/webpack-dev-server.js"></script>
+
+<!-- include the bundle that contains all our scripts, produced by webpack -->
+<!-- the bundle is served by the webpack-dev-server, so serve it also from localhost:8090 -->
+<script type="text/javascript" src="http://localhost:8090/assets/bundle.js"></script>
+
+</body>
+</html>

@@ -1,20 +1,74 @@
 const React = require('react');
 const cx = require('classnames');
 
+const pallete = {
+  [48]: '#f5f104',
+  [62]: '#ffe300',
+  [36]: '#d5ec13',
+  [26]: '#bce121',
+  [63]: '#ffe700',
+  [76]: '#ff9204',
+  [43]: '#eef107',
+  [64]: '#ffdf01',
+  [18]: '#93cc36',
+  [24]: '#fef100',
+  [47]: '#f4f104',
+  [53]: '#ffee00',
+  [36]: '#d9ee11',
+  [30]: '#d0ea16',
+  [10]: '#97ce34'
+};
+
+
 class Youchart extends React.Component {
+  constructor () {
+    this.state = {}
+  }
+
+  onYearHover(level, ev) {
+    this.setState({
+      level: level
+    })
+  }
+
   render() {
     const {
-        count,
         name,
-        level,
         type,
         } = this.props;
 
+    const level = this.state.level || this.props.level
+
+    var count = type === 'years'
+        ? this.props.years[level - 1].percent + '%'
+        : this.props.count
+
     const titleClass = cx({
       'youchart-title': true,
-      ['youchart-title-lvl_' + level]: true
-
+      ['youchart-title-lvl_' + level]: type === 'step' || type === 'grad'
+    }, {
+      'youchart-title-thin': type === 'years',
+      ['youchart-title-year_' + ((level < 10) ? '0' + level : level)]: type === 'years'
     });
+
+
+    var titleStyle = {};
+    if (type === 'years' && !isUndefined(this.props.years)) {
+      const palleteColor = pallete[this.props.years[level - 1].percent];
+
+      titleStyle = Object.assign({}, titleStyle, {
+        backgroundColor: palleteColor,
+        color: getContrast(palleteColor.slice(1)) <= 205
+            ? '#ffffff'
+            : '#4c4c4c'
+      });
+    }
+
+
+    const blockClass = cx({
+      'youchart': true,
+      'youchart-yearstype': type === 'years'
+    })
 
     const lineClass = cx({
       'youchart-line': true,
@@ -26,39 +80,94 @@ class Youchart extends React.Component {
       'youchart-steps': true,
       'youchart-steps-grad': type === 'grad'
     })
+    const nameClass = cx({
+      'youchart-name': true,
+      'youchart-name-thin': type === 'years'
+    })
+    const countClass = cx({
+      'youchart-count': true,
+      'youchart-count-thin': type === 'years'
+    })
 
 
-    const items = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(function (c) {
-      const num = (type === 'grad' && c !== 0)
-          ? c + '0'
-          : c;
+    const content = (function () {
+      if (type === 'years') {
+        const yearsData = this.props.years;
 
-      const classPercent = 'youchart-step-percent_' + num // почему при попытке включить его прямо в ключ, валится с ошибкой компиляции ?
+        if (!yearsData) {
+          console.warn('Years is empty :(');
+          return
+        }
+        const onYearHover = this.onYearHover.bind(this);
 
-      const itemClass = cx({
-        "youchart-step": true,
-        ["youchart-step-lvl_" + c]: type === 'step',
-        [classPercent]: type === 'grad' && (c === 0 || c === 10),
-        "youchart-step-grad": type === 'grad'
-      });
+        const years = yearsData.map(function (year, i, list) {
+          const style = {
+            'backgroundColor': pallete[year.percent],
+            'height': year.percent + '%'
+          };
 
-      return (<li className={itemClass} key={c}>
-        {num}
-      </li>)
-    });
+          return <div className="youchart-year" key={year.year} onMouseEnter={onYearHover.bind(null, i + 1)}>
+            <div className="youchart-yearpos">
+              <div className="yochart-yearline" style={style}></div>
+            </div>
+            <div className="yochart-yearcount">
+              {(i === 0 || i === list.length - 1) ? year.year : year.year.toString().slice(-2)}
+            </div>
+          </div>
+        });
 
-    return (<div className="youchart">
-      <div className={titleClass}>
+
+        return <div className="youchart-years">
+          <div className="cf">
+            <div className="youchart-verticalgrad">
+              <div className="youchart-verticalsteps">
+              {[10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0].map(function (n) {
+                (<div className="youchart-verticalstep" key={n}>{n}</div>)
+              })}
+              </div>
+            </div>
+
+            <div className="youchart-yearslist">
+              {years}
+            </div>
+          </div>
+        </div>
+      } else if (type === 'grad' && type === 'step') {
+
+        const items = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(function (c) {
+          const num = (type === 'grad' && c !== 0)
+              ? c + '0'
+              : c;
+
+          const itemClass = cx({
+            "youchart-step": true,
+            ["youchart-step-lvl_" + c]: type === 'step'
+          }, {
+            ['youchart-step-percent_' + num ]: type === 'grad' && (c === 0 || c === 10),
+            "youchart-step-grad": type === 'grad'
+          });
+
+          return (<li className={itemClass} key={c}>
+            {num}
+          </li>)
+        });
+        return <div className={lineClass}>
+          <ul className={stepsClass}>
+            {items}
+          </ul>
+        </div>
+      }
+    }.bind(this))();
+
+
+    return (<div className={blockClass}>
+      <div className={titleClass} style={titleStyle}>
         <div className="youchart-inside">
-          <div className="youchart-name">{name}</div>
-          <div className="youchart-count">{count}</div>
+          <div className={nameClass}>{name}</div>
+          <div className={countClass}>{count}</div>
         </div>
       </div>
-      <div className={lineClass}>
-        <ul className={stepsClass}>
-          {items}
-        </ul>
-      </div>
+      {content}
       <div className='youchart-children'>
         {this.props.children}
       </div>
@@ -83,5 +192,20 @@ Youchart.propTypes = {
     }
   }
 };
+
+function isUndefined(el) {
+  return typeof el === 'undefined'
+}
+/**
+ * @credits: http://stackoverflow.com/questions/11867545/change-text-color-based-on-brightness-of-the-covered-background-area
+ */
+function getContrast(hexcolor){
+  var r = parseInt(hexcolor.substr(0,2),16);
+  var g = parseInt(hexcolor.substr(2,2),16);
+  var b = parseInt(hexcolor.substr(4,2),16);
+  var yiq = ((r*299)+(g*587)+(b*114))/1000;
+  return yiq;
+}
+
 
 module.exports = Youchart;

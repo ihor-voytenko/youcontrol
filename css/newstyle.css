@@ -126,7 +126,7 @@
 .btnswitch-list {
     display: -webkit-inline-box;
 }
-.contentnav-marking{
+.contentnav-layout{
     margin: 30px 0px;
 }
 .contentnav-list {
@@ -230,8 +230,7 @@
     box-sizing: border-box;
     background-color: #F2F2F2;
     padding: 25px;
-    width: 997px;
-    margin: 15px;
+
 }
 
 .conclusionsblock-text {
@@ -247,7 +246,7 @@
 /*  BLOCK: optionsanalysis-block */
 .optionsanalysis-block{
     box-sizing: border-box;
-    padding: 20px;
+    padding: 5px;
 }
 .optionsanalysis-left{
     float: left;
@@ -420,27 +419,6 @@
     width: 974px;
 }
 /*END Btninf Style*/
-
-
-/*  numbering block*/
-.lastblock{
-    margin: 100px 0px;
-}
-
-
-
-
-
-/*  END numbering block*/
-
-
-
-
-
-
-
-
-
 
 
 

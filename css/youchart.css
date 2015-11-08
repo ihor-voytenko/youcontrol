@@ -1,6 +1,6 @@
 .youchart {
     width: 485px;
-    padding: 14px;
+    padding: 14px 14px 30px 14px;
 }
 
 .youchart-big {
@@ -14,9 +14,9 @@
 .textblock-title {
     font-weight: bold;
     font-size: 14px;
-    padding-top: 28px;
+    padding-top: 8px;
     color: black;
-    margin: 14px 0;
+    margin: 10px 0;
 }
 
 .youchart-title {

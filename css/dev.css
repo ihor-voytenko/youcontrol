@@ -1,3 +1,6 @@
+/*  layout block*/
+
+
 .dev-container {
     width: 1024px;
     margin: 50px auto;
@@ -6,9 +9,11 @@
 
 }
 .dev-navigation{
-    width: 997px;
+    /*width: 997px;*/
     margin: 0 auto auto;
 }
+
+
 .dev-separator {
     margin: 50px 0;
 }
@@ -23,3 +28,12 @@
 .dev-half {
     width: 50%;
 }
+
+.contentblock{
+
+}
+
+
+
+
+/*  END layout block*/

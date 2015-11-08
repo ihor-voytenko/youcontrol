@@ -16,6 +16,9 @@
 
 .dev-separator {
     margin: 50px 0;
+    text-align: center;
+    font-style: italic;
+    color: #666;
 }
 
 .dev-left {
@@ -29,11 +32,12 @@
     width: 50%;
 }
 
-.contentblock{
-
-}
-
 
 
 
 /*  END layout block*/
+
+.dev-menu {
+    margin: 50px auto;
+
+}

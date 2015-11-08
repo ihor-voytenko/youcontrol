@@ -1,3 +1,10 @@
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
 @font-face {
     font-family: 'bebas_neuebold';
     src: url('./fonts/bebasneue/bebasneue_bold-webfont.eot');
@@ -88,11 +95,11 @@
 .risklevel-text {
     text-align: center;
 }
-.bigshadowblock-uptitle{
+.contentnav-uptitle{
     margin-top: 55px;
     font-weight: bold;
 }
-.bigshadowblock-uptitle-righttext{
+.contentnav-righttext{
     font-weight: normal;
     padding-left: 20px;
 }
@@ -124,13 +131,15 @@
 
 /*Btn Style*/
 .btnswitch-list {
-    display: -webkit-inline-box;
+    white-space: nowrap;
+    /*display: -webkit-inline-box;*/
 }
-.contentnav-layout{
+
+.contentnav-btnlist{
     margin: 30px 0px;
 }
 .contentnav-list {
-    display: -webkit-inline-box;
+    display: inline-box;
 
 }
 
@@ -289,11 +298,9 @@
 
 /*  BLOCK:secondarymenu-block*/
 
-.secondarymenu-block{
+.secondarymenu{
+    margin-top: 19px;
     box-sizing: border-box;
-}
-.secondarymenu {
-
 }
 .secondarymenu-list{
 
@@ -309,9 +316,8 @@
     /* position: relative; */
     /* top: 0; */
     /* transition: top, background-color .1s ease; */
-    width: 122px;
+    width: 118px;
     text-align: center;
-
 }
 /*.secondarymenu-item-active {*/
     /*background-color: white;*/
@@ -345,9 +351,12 @@
 
 /*Btninf Style*/
 .btninf-item{
+
 }
 .btninf-list {
-    display: -webkit-inline-box;
+    /*display: -webkit-inline-box;*/
+    display: inline-block;
+    white-space: nowrap;
 }
 .btninf-icon {
     display: inline-block;
@@ -409,14 +418,34 @@
 .btn-empty:hover {
     background: #dfdfdf;
 }
+
+
+
+.navigationinf {
+    padding-top: 35px;
+    margin-bottom: 19px;
+}
+.navigationinf-header {
+    margin-bottom: 30px;
+    white-space: nowrap;
+}
+.navigationinf-btn {
+    display: inline-block;
+    vertical-align: text-top;
+    margin-right: 20px;
+}
 .navigationinf-title{
-    font-size: 26px;
+    text-transform: uppercase;
+    font-size: 19px;
     font-weight: bold;
     display: inline-block;
-    margin-top: -38px;
-    line-height: 30px;
-    padding: 0 0 10px 50px;
-    width: 974px;
+    /*margin-top: -38px;*/
+    line-height: 24px;
+    margin: 0;
+    padding: 0;
+    /*width: 974px;*/
+    white-space: normal;
+    vertical-align: text-top;
 }
 /*END Btninf Style*/
 
@@ -453,11 +482,16 @@
  */
 .cf {
     *zoom: 1;
-    margin: 30px 0px;
 }
 
 .btn-youcontrol {
     border-radius: 0;
     box-shadow: none;
     transition: background .08s linear;
+}
+
+
+.grayheader {
+    background-color: #f2f2f2;
+    margin-bottom: 35px;
 }

@@ -2,13 +2,16 @@
     width: 485px;
     padding: 14px;
 }
+
 .youchart-big {
     width: 100%;
 }
-.textblock-text{
+
+.textblock-text {
     color: #989898;
 }
-.textblock-title{
+
+.textblock-title {
     font-weight: bold;
     font-size: 14px;
     padding-top: 28px;
@@ -28,12 +31,12 @@
     background-image: url(../images/downarrow.png);
     background-repeat: no-repeat;
     background-position: center bottom;
+    transition: background-color, color .3s ease;
 }
+
 .youchart-title-noarrow {
     background-image: none;
 }
-
-
 
 /* for 11 */
 .youchart-title-lvl_0 {
@@ -103,16 +106,17 @@
     background-color: #e24d07;
     background-position: -588px bottom;
 }
+
 /* -519px*/
 
 /* for 11 */
 
 /* for 11  gradient*/
 /*.youchart-line-step_lvl_0{*/
-    /*margin-left: -19px;*/
+/*margin-left: -19px;*/
 /*}*/
 /*.youchart-line-step_lvl_100{*/
-    /*margin-right: -22px;*/
+/*margin-right: -22px;*/
 /*}*/
 .youchart-title-lvl_0 {
     background-color: #7bc043;
@@ -198,17 +202,15 @@
     font-family: bebas_neuebold, Impact, Arial, sans-serif;
     font-size: 72px;
     font-weight: bold;
-    text-transform: uppercase;
+    text-transform: none;
     float: right;
     line-height: 116px;
 }
 
-
-
-
 .youchart-line {
 
 }
+
 .youchart-line-grad {
     background-image: url(../images/gradient_line.png);
     background-repeat: no-repeat;
@@ -227,18 +229,16 @@
     /*text-align: center;*/
 }
 
-
-
 .youchart-steps {
     overflow: hidden;
     /*word-spacing: -4px;*/
     /*letter-spacing: -4px;*/
     /*background: #e24d07;*/
 }
+
 .youchart-steps-grad {
     padding-top: 14px;
 }
-
 
 .youchart-step {
     float: left;
@@ -252,36 +252,37 @@
     line-height: 20px;
     transition: opacity .1s ease;
 }
+
 .youchart-step-grad {
     color: #7f7f7f;
     font-size: 11px;
     width: 47px;
     background-color: transparent !important;
 }
+
 .youchart-step-percent_0 {
     margin-left: -18px;
 }
+
 .youchart-step-percent_100 {
     margin-right: -20px;
 }
 
 /*.youchart-step-grad {*/
-    /*float: left;*/
-    /*color: #989898;*/
-    /*width: 47px;*/
-    /*height: 20px;*/
-    /*box-sizing: border-box;*/
-    /*line-height: 56px;*/
-    /*transition: opacity .1s ease;*/
-    /*text-align: center;*/
+/*float: left;*/
+/*color: #989898;*/
+/*width: 47px;*/
+/*height: 20px;*/
+/*box-sizing: border-box;*/
+/*line-height: 56px;*/
+/*transition: opacity .1s ease;*/
+/*text-align: center;*/
 /*}*/
 
 .youchart-step:hover {
     opacity: .8;
     /*cursor: pointer;*/
 }
-
-
 
 /* for 11 */
 .youchart-step-lvl_0 {
@@ -330,7 +331,6 @@
 
 /* for */
 
-
 .youchart-bigline {
     display: block;
     width: 100%;
@@ -340,3 +340,123 @@
     background-size: contain;
     /*background-color: #ff0000;*/
 }
+
+
+
+
+
+/* YOUCHART YEARS */
+.youchart-yearstype {
+    padding: 0;
+}
+.youchart-yearstype * {
+    box-sizing: border-box;
+
+}
+
+.youchart-title-thin {
+    height: 57px;
+    line-height: 49px;
+}
+.youchart-inside {
+
+}
+
+.youchart-name {
+
+}
+.youchart-name-thin {
+    line-height: 49px;
+    font-size: 19px;
+}
+
+.youchart-count {
+
+}
+.youchart-count-thin {
+    line-height: 49px;
+    font-size: 46px;
+}
+
+.youchart-years {
+    width: 484px;
+    padding: 20px 25px 14px;
+    margin-top: -14px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, .2);
+}
+
+.youchart-verticalgrad {
+    width: 40px;
+    height: 217px;
+    float: left;
+    position: relative;
+}
+.youchart-verticalgrad:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 23px;
+    width: 10px;
+    height: 217px;
+    background: url(../images/youchart-verticalgrad.png);
+}
+.youchart-verticalsteps {
+    text-align: right;
+    width: 14px;
+    margin-top: -3px;
+    margin-bottom: -5px;
+}
+.youchart-verticalstep {
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #7f7f7f;
+    line-height: 16px;
+    margin-bottom: 5px;
+}
+
+.youchart-yearslist {
+    float: left;
+    margin-left: 18px;
+}
+
+.youchart-year {
+    float: left;
+    margin-left: 1px;
+}
+
+.youchart-yearpos {
+    height: 217px;
+    width: 24px;
+    position: relative;
+}
+
+.yochart-yearline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.yochart-yearcount {
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #7f7f7f;
+    text-align: center;
+}
+
+/* title-thin for different years-position */
+.youchart-title-year_01 {background-position: -954px bottom;}
+.youchart-title-year_02 {background-position: -929px bottom;}
+.youchart-title-year_03 {background-position: -904px bottom;}
+.youchart-title-year_04 {background-position: -879px bottom;}
+.youchart-title-year_05 {background-position: -854px bottom;}
+.youchart-title-year_06 {background-position: -829px bottom;}
+.youchart-title-year_07 {background-position: -804px bottom;}
+.youchart-title-year_08 {background-position: -779px bottom;}
+.youchart-title-year_09 {background-position: -754px bottom;}
+.youchart-title-year_10 {background-position: -729px bottom;}
+.youchart-title-year_11 {background-position: -704px bottom;}
+.youchart-title-year_12 {background-position: -679px bottom;}
+.youchart-title-year_13 {background-position: -654px bottom;}
+.youchart-title-year_14 {background-position: -629px bottom;}
+.youchart-title-year_15 {background-position: -604px bottom;}

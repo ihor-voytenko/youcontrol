@@ -132,7 +132,10 @@
 
 /*Btn Style*/
 .btnswitch-list {
-
+    overflow: hidden;
+}
+.btnswitch-item {
+    float: left;
 }
 .contentnav-layout{
     margin-bottom: 15px;

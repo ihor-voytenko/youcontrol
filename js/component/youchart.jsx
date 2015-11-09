@@ -21,7 +21,7 @@ const pallete = {
 
 
 class Youchart extends React.Component {
-  constructor () {
+  constructor() {
     this.state = {}
   }
 
@@ -36,6 +36,8 @@ class Youchart extends React.Component {
         name,
         type,
         } = this.props;
+
+    const mods = this.props.mods.split('|');
 
     const level = this.state.level || this.props.level
 
@@ -52,17 +54,20 @@ class Youchart extends React.Component {
     });
 
 
-    var titleStyle = {};
-    if (type === 'years' && !isUndefined(this.props.years)) {
-      const palleteColor = pallete[this.props.years[level - 1].percent];
+    var titleStyle = (function(){
+      var titleStyle = {};
+      if (type === 'years' && !isUndefined(this.props.years)) {
+        const palleteColor = pallete[this.props.years[level - 1].percent];
 
-      titleStyle = Object.assign({}, titleStyle, {
-        backgroundColor: palleteColor,
-        color: getContrast(palleteColor.slice(1)) <= 205
-            ? '#ffffff'
-            : '#4c4c4c'
-      });
-    }
+        titleStyle = Object.assign({}, titleStyle, {
+          backgroundColor: palleteColor,
+          color: getContrast(palleteColor.slice(1)) <= 205
+              ? '#ffffff'
+              : '#4c4c4c'
+        });
+      }
+      return titleStyle
+    }.bind(this))();
 
 
     const blockClass = cx({
@@ -73,7 +78,8 @@ class Youchart extends React.Component {
     const lineClass = cx({
       'youchart-line': true,
       'youchart-line-step': type === 'step',
-      'youchart-line-grad': type === 'grad'
+      'youchart-line-grad': type === 'grad',
+      'youchart-line-reverse': inArray(mods, 'reverse'),
     })
 
     const stepsClass = cx({
@@ -117,12 +123,18 @@ class Youchart extends React.Component {
         });
 
 
+        const verticalgradClass = cx({
+          'youchart-verticalgrad': true,
+          'youchart-verticalgrad-step': inArray(mods, 'step'),
+          'youchart-verticalgrad-reverse': inArray(mods, 'reverse')
+        })
+
         return <div className="youchart-years">
           <div className="cf">
-            <div className="youchart-verticalgrad">
+            <div className={verticalgradClass}>
               <div className="youchart-verticalsteps">
               {[10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0].map(function (n) {
-                (<div className="youchart-verticalstep" key={n}>{n}</div>)
+                return (<div className="youchart-verticalstep" key={n}>{n}</div>)
               })}
               </div>
             </div>
@@ -180,6 +192,7 @@ Youchart.defaultProps = {
   count: 0,
   name: 'Noname',
   level: 1,
+  mods: '',
   type: 'step',
 };
 
@@ -196,14 +209,18 @@ Youchart.propTypes = {
 function isUndefined(el) {
   return typeof el === 'undefined'
 }
+function inArray(arr, x) {
+  return arr.indexOf(x) !== -1
+}
+
 /**
  * @credits: http://stackoverflow.com/questions/11867545/change-text-color-based-on-brightness-of-the-covered-background-area
  */
-function getContrast(hexcolor){
-  var r = parseInt(hexcolor.substr(0,2),16);
-  var g = parseInt(hexcolor.substr(2,2),16);
-  var b = parseInt(hexcolor.substr(4,2),16);
-  var yiq = ((r*299)+(g*587)+(b*114))/1000;
+function getContrast(hexcolor) {
+  var r = parseInt(hexcolor.substr(0, 2), 16);
+  var g = parseInt(hexcolor.substr(2, 2), 16);
+  var b = parseInt(hexcolor.substr(4, 2), 16);
+  var yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
   return yiq;
 }
 

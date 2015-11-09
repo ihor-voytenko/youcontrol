@@ -217,23 +217,13 @@
     background-position: top center;
     width: auto;
     min-height: 10px;
-
-    /*float: left;*/
-    /*width: 47px;*/
-    /*height: 20px;*/
-    /*box-sizing: border-box;*/
-    /*padding-top: 2px;*/
-    /*font-size: 11px;*/
-    /*line-height: 56px;*/
-    /*transition: opacity .1s ease;*/
-    /*text-align: center;*/
+}
+.youchart-line-grad.youchart-line-reverse {
+    background-image: url(../images/gradient_line-reverse.png);
 }
 
 .youchart-steps {
     overflow: hidden;
-    /*word-spacing: -4px;*/
-    /*letter-spacing: -4px;*/
-    /*background: #e24d07;*/
 }
 
 .youchart-steps-grad {
@@ -400,6 +390,15 @@
     height: 217px;
     background: url(../images/youchart-verticalgrad.png);
 }
+.youchart-verticalgrad-reverse:after {
+    background: url(../images/youchart-verticalgrad-reverse.png);
+}
+.youchart-verticalgrad-step:after {
+    background: url(../images/youchart-verticalgrad-step.png);
+}
+.youchart-verticalgrad-step.youchart-verticalgrad-reverse:after {
+    background: url(../images/youchart-verticalgrad-step-reverse.png);
+}
 .youchart-verticalsteps {
     text-align: right;
     width: 14px;
@@ -422,6 +421,9 @@
 .youchart-year {
     float: left;
     margin-left: 1px;
+}
+.youchart-year:hover {
+    cursor: pointer;
 }
 
 .youchart-yearpos {

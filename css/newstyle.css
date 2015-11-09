@@ -96,8 +96,9 @@
     text-align: center;
 }
 .contentnav-uptitle{
-    margin-top: 55px;
     font-weight: bold;
+    vertical-align: bottom;
+    padding-top: 22px;
 }
 .contentnav-righttext{
     font-weight: normal;
@@ -131,15 +132,15 @@
 
 /*Btn Style*/
 .btnswitch-list {
-    white-space: nowrap;
-    /*display: -webkit-inline-box;*/
-}
 
+}
+.contentnav-layout{
+    margin-bottom: 15px;
+}
 .contentnav-btnlist{
     margin: 30px 0px;
 }
 .contentnav-list {
-    display: inline-box;
 
 }
 
@@ -155,7 +156,9 @@
     width: 16px;
     height: 12px;
 }
-
+.btnswitch-item{
+    display: inline-block;
+}
 .btnswitch-icon-horizontal {
     background-image: url(../images/sp_green.png);
 }
@@ -215,12 +218,31 @@
 .contentnavinf-item {
     padding: 0 0 0 5px;
     border-radius: 0px;
+    display: inline-block;
 }
 
-.icon-arrow-left {
+.icon-ago {
+    background-image: url(../images/st_nazad.png);
+    width: 15px;
+    height: 13px;
     margin-right: 8px;
 }
+.icon-envelopeimg{
+    background-image: url(../images/mail.png);
+width: 18px;
+    height: 12px;
+}
+.icon-download-altimg{
+    background-image: url(../images/download.png);
+    width: 17px;
+    height: 17px;
 
+}
+.icon-printimg{
+    background-image: url(../images/printer.png);
+    width: 17px;
+    height: 20px;
+}
 /* END BLOCK: bigshadowblock */
 
 
@@ -307,27 +329,35 @@
 }
 .secondarymenu-item{
     background-color: #F2F2F2;
-    padding: 20px 0px 15px 0px;
-    /* height: 30px; */
     display: inline-block;
     border: 1px solid #DDDDDD;
     border-bottom: none;
     border-radius: 3px 3px 0 0;
-    /* position: relative; */
-    /* top: 0; */
-    /* transition: top, background-color .1s ease; */
-    width: 118px;
     text-align: center;
+
 }
-/*.secondarymenu-item-active {*/
-    /*background-color: white;*/
-/*}*/
+.secondarymenu-link {
+    display: block;
+    padding: 20px 0 15px 0;
+    width: 118px;
+    text-decoration: none;
+    color: #989898;
+}
+.secondarymenu-link:visited {
+    color: #989898;
+}
+.secondarymenu-link:hover {
+    text-decoration: none;
+}
+.secondarymenu-item-active {
+    background-color: white;
+}
 
 .secondarymenu-item:hover{
     background-color: white;
 
 }
-.item-num-green{
+.secondarymenu-label-green{
      background-color: #75C04D;
     padding: 1px 6px;
     color: white;
@@ -335,7 +365,7 @@
     float: right;
     margin-right: 15px  ;
 }
-.item-num-grey{
+.secondarymenu-label-gray{
     background-color: #939393;
     padding: 1px 6px;
     color: white;
@@ -351,12 +381,11 @@
 
 /*Btninf Style*/
 .btninf-item{
+    display: inline-block;
 
 }
 .btninf-list {
-    /*display: -webkit-inline-box;*/
-    display: inline-block;
-    white-space: nowrap;
+
 }
 .btninf-icon {
     display: inline-block;
@@ -372,9 +401,10 @@
     border: solid #D7D7D7 1px;
     color: #939393;
 }
-/*.btninf-btn:hover {*/
-    /*background: white;*/
-/*}*/
+.btninf-btn:hover{
+    background: #dfdfdf;
+}
+
 .btninf-btn-current{
     background: #7CBE4B;
     border: solid #5BB24F 1px;
@@ -385,10 +415,10 @@
     padding: 7px 20px;
 }
 .btninf-icon-social{
-    background-image: url(../images/social_white.png);
+    background-image: url(../images/social_icon_white.png);
 }
 .btninf-icon-refresh{
-    background-image: url(../images/refresh_norm.png);
+    background-image: url(../images/refresh-icon.png);
 }
 
 .btninf-item-right{
@@ -410,7 +440,7 @@
 
 /*Btninf Style*/
 .btn-empty{
-    background: white;
+    background: #F2F2F2;
     transition: background-color .2s ease;
     border: solid #D7D7D7 1px;
     padding: 4px 0px 4px 8px;

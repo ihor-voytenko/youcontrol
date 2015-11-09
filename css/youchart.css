@@ -460,3 +460,44 @@
 .youchart-title-year_13 {background-position: -654px bottom;}
 .youchart-title-year_14 {background-position: -629px bottom;}
 .youchart-title-year_15 {background-position: -604px bottom;}
+
+
+
+
+/* BIG */
+.youchart-inside-big {
+
+}
+.youchart-count-inbig {
+    float: left;
+    font-family: bebas_neuebold, Arial, Helvetica, sans-serif;
+    font-size: 106px;
+}
+.youchart-name-inbig {
+    margin-left: 2%;
+    width: 160px;
+    display: inline-block;
+    line-height: 1.2;
+    vertical-align: middle;
+}
+
+.youchart-text {
+    float: right;
+    line-height: 1.1;
+    width: 600px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    margin-top: 26px;
+}
+.youchart-title-big {
+    position: relative;
+}
+.youchart-title-big:after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 118px;
+    background: #afd95b;
+    top: 0;
+    right: 660px;
+}

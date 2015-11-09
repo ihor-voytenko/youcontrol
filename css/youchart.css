@@ -19,7 +19,9 @@
     color: black;
     margin: 10px 0;
 }
-
+.textblock-text-notitle{
+    padding: 15px 0px 0px 0px;
+}
 .youchart-title {
     background-color: #cfcfcf;
     color: white;
@@ -338,7 +340,7 @@
 
 /* YOUCHART YEARS */
 .youchart-yearstype {
-    padding: 0;
+    padding: 14px 14px 30px 14px;
 }
 .youchart-yearstype * {
     box-sizing: border-box;

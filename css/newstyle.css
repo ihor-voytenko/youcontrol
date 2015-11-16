@@ -39,12 +39,12 @@
     width: 1px;
     background: #DEDEDE;
     top: 0;
-    left: 79%;
+    left: 75.5%;
 }
 
 .bigshadowblock-left {
     float: left;
-    width: 79%;
+    width: 75.5%;
     padding: 40px;
     box-sizing: border-box;
 }
@@ -55,14 +55,16 @@
 }
 
 .bigshadowblock-title {
-    margin-top: 0;
+    margin-top: -3px;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
+    letter-spacing: 0.3px;
 }
 
 .bigshadowblock-text {
     margin-bottom: 20px;
+    line-height: 18px;
 }
 
 .btn {
@@ -89,24 +91,26 @@
 }
 
 .risklevel {
-    padding: 100px 0 0 0;
+    padding: 60px 0 0 0;
 }
 
 .risklevel-text {
-    text-align: center;
+    padding: 3px;
 }
 .contentnav-uptitle{
     font-weight: bold;
     vertical-align: bottom;
     padding-top: 22px;
+    font-size: 19px;
 }
 .contentnav-righttext{
     font-weight: normal;
-    padding-left: 20px;
+    padding-left: 13px;
+    font-size: 16px;
 }
 /* .risklevel-img */
 .risklevel-img {
-    margin: auto;
+    margin: -4px 0px 0px 35px;
     display: block;
     width: 103px;
     height: 94px;
@@ -138,7 +142,8 @@
     float: left;
 }
 .contentnav-layout{
-    margin-bottom: 15px;
+    padding-top: 4px;
+
 }
 .contentnav-btnlist{
     margin: 30px 0px;
@@ -219,7 +224,7 @@
 }
 
 .contentnavinf-item {
-    padding: 0 0 0 5px;
+    padding: 0 0 0 4px;
     border-radius: 0px;
     display: inline-block;
 }
@@ -335,16 +340,17 @@
     display: inline-block;
     border: 1px solid #DDDDDD;
     border-bottom: none;
-    border-radius: 3px 3px 0 0;
+    border-radius: 5px 5px 0 0;
     text-align: center;
 
 }
 .secondarymenu-link {
     display: block;
-    padding: 20px 0 15px 0;
+    padding: 17px 0 14px 0px;
     width: 118px;
     text-decoration: none;
     color: #989898;
+    font-size: 14px;
 }
 .secondarymenu-link:visited {
     color: #989898;
@@ -366,7 +372,7 @@
     color: white;
     font-size: 12px;
     float: right;
-    margin-right: 15px  ;
+    margin-right: 14px;
 }
 .secondarymenu-label-gray{
     background-color: #939393;
@@ -374,7 +380,7 @@
     color: white;
     font-size: 12px;
     float: right;
-    margin-right: 15px;
+    margin-right: 14px;
 }
 
 /*  END BLOCK:secondarymenu-block*/
@@ -398,6 +404,7 @@
     height: 18px;
     position: relative;
     top: 3px;
+    right: 4px;
 }
 .btninf-btn{
     background: #F2F2F2;
@@ -414,8 +421,16 @@
     color: white;
 }
 .btninf-text {
+    padding: 7px 12px;
+}
+.btninf-addmonitoring{
+    padding: 4px 0px 4px 0px;
+    margin-top: 4px;
+    letter-spacing: 0.2px;
 
-    padding: 7px 20px;
+}
+.btninf-refresh{
+    padding: 0px 52px 0px 0px;
 }
 .btninf-icon-social{
     background-image: url(../images/social_icon_white.png);
@@ -437,7 +452,7 @@
 }
 
 .btninf-item-text{
-    padding: 7px 20px;
+    padding: 7px 10px;
     color: #939393;
 }
 
@@ -446,7 +461,7 @@
     background: #F2F2F2;
     transition: background-color .2s ease;
     border: solid #D7D7D7 1px;
-    padding: 4px 0px 4px 8px;
+    padding: 7px 0px 7px 8px;
 }
 .btn-empty:hover {
     background: #dfdfdf;
@@ -521,10 +536,11 @@
     border-radius: 0;
     box-shadow: none;
     transition: background .08s linear;
+    padding: 6px 18px;
 }
 
 
 .grayheader {
     background-color: #f2f2f2;
-    margin-bottom: 35px;
+    margin-bottom: 24px;
 }

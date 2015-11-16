@@ -219,13 +219,11 @@
 
 
 <script>
-  var script = $('<script type="text/javascript" src="">')
-  if(!document.location.hostname === "ihor-voytenko.github.io") {
-    script.attr('src', 'http://localhost:8090/assets/bundle.js');
-  } else {
-    script.attr('src', 'dist/bundle.js');
-  }
-  script.appendTo('body');
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src = (document.location.hostname === "localhost" ? 'http://localhost:8090/assets/bundle.js' : 'dist/bundle.js');
+
+    document.getElementsByTagName("head")[0].appendChild(script);
 </script>
 
 <!-- include the bundle that contains all our scripts, produced by webpack -->

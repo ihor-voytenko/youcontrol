@@ -1,11 +1,12 @@
 /* генерим react-компоненты из под серверных шаблонов */
+"use strict";
 
 var ReactDOM = require('react-dom');
 var React = require('react');
 
 
-const findAndRender = (function () {
-  const options = {
+var findAndRender = (function () {
+  var options = {
     className: 'jr',
     classNameActivated: 'jr-activated'
   };
@@ -42,7 +43,7 @@ const findAndRender = (function () {
       }
 
 
-      const updateInDom = (function () {
+      var updateInDom = (function () {
         var props = {};
         return function (component, newProps, children) {
           props = Object.assign(props || {}, newProps)

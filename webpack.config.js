@@ -15,7 +15,10 @@ module.exports = {
         //tell webpack to use jsx-loader for all *.jsx files
         test: /\.jsx$/,
         exclude: [path.resolve(__dirname, 'node_modules')],
-        loader: 'jsx-loader?insertPragma=React.DOM&harmony'
+        loader: 'babel',
+        query: {
+          presets: ['react', 'es2015']
+        }
       }
     ]
   },

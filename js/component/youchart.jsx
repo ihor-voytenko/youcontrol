@@ -19,9 +19,9 @@ const pallete = {
   [10]: '#97ce34'
 };
 
-
 class Youchart extends React.Component {
   constructor() {
+    super();
     this.state = {}
   }
 
@@ -54,7 +54,7 @@ class Youchart extends React.Component {
     });
 
 
-    var titleStyle = (function(){
+    var titleStyle = (function () {
       var titleStyle = {};
       if (type === 'years' && !isUndefined(this.props.years)) {
         const palleteColor = pallete[this.props.years[level - 1].percent];
@@ -69,11 +69,6 @@ class Youchart extends React.Component {
       return titleStyle
     }.bind(this))();
 
-
-    const blockClass = cx({
-      'youchart': true,
-      'youchart-yearstype': type === 'years'
-    })
 
     const lineClass = cx({
       'youchart-line': true,
@@ -171,6 +166,27 @@ class Youchart extends React.Component {
       }
     }.bind(this))();
 
+    //var textContent = '';
+    //if (this.props['contentTitle']) {
+    //  const text = (this.props.content ? this.props.content.split('\n') : []).map(function (txt) {
+    //    return <p>{txt}</p>
+    //  })
+    //
+    //  textContent = (<div className="youchart-content">
+    //    <h4>{this.props['contentTitle']}</h4>
+    //    {text}
+    //  </div>)
+    //}
+
+    const blockClass = cx({
+      'youchart': true,
+      'youchart-yearstype': type === 'years'
+    })
+
+    const childrenClass = cx({
+      'youchart-children': true,
+      ['youchart-children-lvl_' + level]: true
+    });
 
     return (<div className={blockClass}>
       <div className={titleClass} style={titleStyle}>
@@ -180,8 +196,8 @@ class Youchart extends React.Component {
         </div>
       </div>
       {content}
-      <div className='youchart-children'>
-        {this.props.children}
+      <div className={childrenClass}>
+          {this.props.children}
       </div>
     </div>);
   }

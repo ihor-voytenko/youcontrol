@@ -26,9 +26,13 @@
     "react-dom": "^0.14.2"
   },
   "devDependencies": {
-    "webpack": "",
-    "webpack-dev-server": "",
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "http-server": "",
     "jsx-loader": "",
-    "http-server": ""
+    "webpack": "",
+    "webpack-dev-server": ""
   }
 }

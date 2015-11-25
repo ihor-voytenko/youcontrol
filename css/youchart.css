@@ -506,3 +506,22 @@
     top: 0;
     right: 660px;
 }
+.youchart-children .youchart-content {
+    display: none;
+}
+.youchart-children-lvl_0 .youchart-content-lvl_0 { display: block;}
+.youchart-children-lvl_1 .youchart-content-lvl_1 { display: block;}
+.youchart-children-lvl_2 .youchart-content-lvl_2 { display: block;}
+.youchart-children-lvl_3 .youchart-content-lvl_3 { display: block;}
+.youchart-children-lvl_4 .youchart-content-lvl_4 { display: block;}
+.youchart-children-lvl_5 .youchart-content-lvl_5 { display: block;}
+.youchart-children-lvl_6 .youchart-content-lvl_6 { display: block;}
+.youchart-children-lvl_7 .youchart-content-lvl_7 { display: block;}
+.youchart-children-lvl_8 .youchart-content-lvl_8 { display: block;}
+.youchart-children-lvl_9 .youchart-content-lvl_9 { display: block;}
+.youchart-children-lvl_10 .youchart-content-lvl_10 { display: block;}
+.youchart-children-lvl_11 .youchart-content-lvl_11 { display: block;}
+.youchart-children-lvl_12 .youchart-content-lvl_12 { display: block;}
+.youchart-children-lvl_13 .youchart-content-lvl_13 { display: block;}
+.youchart-children-lvl_14 .youchart-content-lvl_14 { display: block;}
+.youchart-children-lvl_15 .youchart-content-lvl_15 { display: block;}

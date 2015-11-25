@@ -139,6 +139,8 @@
 /*Btn Style*/
 .btnswitch-list {
     overflow: hidden;
+    font-size: 0;
+   display: table;
 }
 .btnswitch-item {
     float: left;
@@ -168,6 +170,7 @@
 }
 .btnswitch-item{
     display: inline-block;
+    font-size: 14px;
 }
 .btnswitch-icon-horizontal {
     background-image: url(../images/sp_green.png);

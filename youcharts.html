@@ -259,8 +259,8 @@
     var script = document.createElement("script");
     script.type = "text/javascript";
     script.src = (document.location.hostname === "localhost"
-            ? 'dist/bundle.js'
-            : 'http://localhost:8090/assets/bundle.js'
+            ? 'http://localhost:8090/assets/bundle.js'
+            : 'dist/bundle.js'
     );
 
     document.getElementsByTagName("head")[0].appendChild(script);

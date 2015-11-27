@@ -26,8 +26,7 @@
     position: relative;
     margin-top: 20px;
     transition: box-shadow .2s linear;
-    zoom: 1;
-    filter: progid:DXImageTransform.Microsoft.DropShadow(OffX=2, OffY=10, Color=rgba(8, 8, 8, 0.27));
+    border: 1px solid rgba(3, 3, 3, .2);
 }
 
 .bigshadowblock:hover {

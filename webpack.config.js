@@ -10,6 +10,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   },
   module: {
+    noParse: [ "jquery" ],
     loaders: [
       {
         //tell webpack to use jsx-loader for all *.jsx files
@@ -26,8 +27,12 @@ module.exports = {
     //don't bundle the 'react' npm package with our bundle.js
     //but get it from a global 'React' variable
     //'react': 'React'
+    "jquery": "jQuery"
   },
   resolve: {
-    extensions: ['', '.js', '.jsx']
+    extensions: ['', '.js', '.jsx'],
+    alias: {
+      "jquery": "./js/jquery-adapter.js"
+    }
   }
 }

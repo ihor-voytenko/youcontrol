@@ -1,24 +1,25 @@
 const React = require('react');
 const cx = require('classnames');
+const $ = require('jquery');
 
 const pallete = {
-  [48]: '#f5f104',
-  [62]: '#ffe300',
-  [36]: '#d5ec13',
-  [26]: '#bce121',
-  [63]: '#ffe700',
-  [76]: '#ff9204',
-  [43]: '#eef107',
-  [64]: '#ffdf01',
+  [10]: '#97ce34',
   [18]: '#93cc36',
   [24]: '#fef100',
-  [47]: '#f4f104',
-  [53]: '#ffee00',
-  [36]: '#d9ee11',
+  [26]: '#bce121',
   [30]: '#d0ea16',
-  [10]: '#97ce34'
+  [36]: '#d5ec13',
+  [43]: '#eef107',
+  [47]: '#f4f104',
+  [48]: '#f5f104',
+  [53]: '#ffee00',
+  [62]: '#ffe300',
+  [63]: '#ffe700',
+  [64]: '#ffdf01',
+  [76]: '#ff9204',
 };
 
+console.log('youchart outside')
 class Youchart extends React.Component {
   constructor() {
     super();
@@ -32,6 +33,8 @@ class Youchart extends React.Component {
   }
 
   render() {
+    console.log('youchart')
+
     const {
         name,
         type,

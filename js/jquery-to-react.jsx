@@ -3,7 +3,7 @@
 
 var ReactDOM = require('react-dom');
 var React = require('react');
-var $ = window['jQuery'];
+var $ = require('jquery');
 
 
 var findAndRender = (function () {
@@ -13,20 +13,20 @@ var findAndRender = (function () {
   };
 
   /**
-   * @credits: https://github.com/bitovi/jquerypp/blob/master/event/removed/removed.js
+   * @credits: https://github.com/bitovi/$pp/blob/master/event/removed/removed.js
    * */
   (function () {
-    // Store the old jQuery.cleanData
+    // Store the old $.cleanData
     var oldClean = $.cleanData;
 
-    // Overwrites cleanData which is called by jQuery on manipulation methods
+    // Overwrites cleanData which is called by $ on manipulation methods
     $.cleanData = function (elems) {
       for (var i = 0, elem;
            (elem = elems[i]) !== undefined; i++) {
         // Trigger the destroyed event
         $(elem).triggerHandler("removed");
       }
-      // Call the old jQuery.cleanData
+      // Call the old $.cleanData
       oldClean(elems);
     };
   })();
@@ -81,7 +81,7 @@ module.exports = {
   init: function (componentsHash) {
     // todo: $?
 
-    // init on jquery dom ready
+    // init on $ dom ready
     $(function () {
       findAndRender({
         dom: document.body,
